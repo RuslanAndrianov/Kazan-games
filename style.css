@@ -1,0 +1,172 @@
+:root {
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: block;
+    list-style-type: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+
+
+
+
+
+header {
+    background-color: rosybrown;
+}
+
+nav {
+    background-color: yellow;
+}
+
+main {
+    background-color: aqua;
+}
+
+footer {
+    background-color: greenyellow;
+}
+
+
+
+
+
+
+
+
+figure {
+    display: inline-block;
+}
+
+.main-info-one {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+.nav {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-menu-categories {
+    height: 100%;
+}
+
+.nav-menu-toggle {
+    position: absolute;
+    right: 0.1em;
+    top: -0.16em;
+    border: 0;
+    background-color: transparent;
+
+    font-size: 3em;
+    width: 1em;
+    height: 1em;
+    line-height: 0.4;
+    text-indent: 5em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.nav-menu-toggle::after {
+    display: block;
+    content: "\2261";
+    text-indent: 0;
+    
+}
+
+.nav-menu-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0;
+}
+
+.nav-menu-dropdown.is-open {
+    display: block;
+}
+
+.nav-menu {
+    margin: 0;
+    padding-left: 0;
+    border: 1px solid #ccc;
+    list-style: none;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (min-width: 50em) {
+    .nav-menu {
+        padding: 0 4em;
+    }
+}
+
+.nav-menu > li + li {
+    border-top: 1px solid #ccc;
+}
+
+.nav-menu > li > a {
+    display: block;
+    padding: 0.8em 1em;
+    color: white;
+    font-weight: normal;
+}
+
+
+
+@media screen and (min-width: 35em) {
+    .nav-menu-toggle {
+        display: none;
+    }
+
+    .nav-menu-dropdown {
+        display: block;
+        position: static;
+    }
+
+    .nav-menu {
+        display: flex;
+        border: 0;
+        padding: 0 1em;
+    }
+
+    .nav-menu > li {
+        flex: 1
+    }
+
+    .nav-menu > li + li {
+        border: 0;
+    }
+
+    .nav-menu > li > a {
+        padding: 0.3em;
+        text-align: center;
+    }
+
+    .nav-menu-categories p {
+        display: none;
+    }
+}
