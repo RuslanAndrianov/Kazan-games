@@ -1,5 +1,6 @@
 :root {
     box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
     font-size: 1rem;
 }
 
@@ -16,6 +17,10 @@ li {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -23,90 +28,60 @@ li {
     max-width: 1080px;
 }
 
-
-
-
-
-
-header {
-    background-color: rosybrown;
+.show {
+    display: block;
 }
 
-nav {
+.hide {
+    display: none;
+}
+
+/* #region Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 3rem;
+    padding: 1em 0;
+    text-align: center;
+
     background-color: yellow;
 }
 
-main {
-    background-color: aqua;
-}
+/* #endregion */
 
-footer {
-    background-color: greenyellow;
-}
-
-
-
-
-
-
-
-
-figure {
-    display: inline-block;
-}
-
-.main-info-one {
-    display: inline-block;
-}
-
-
-
-
-
-
+/* #region Navigation */
 
 .nav {
-    position: relative;
+    background-color: rosybrown;
     cursor: pointer;
 }
 
 .nav-menu-categories {
-    height: 100%;
-}
-
-.nav-menu-toggle {
-    position: absolute;
-    right: 0.1em;
-    top: -0.16em;
+    display: flex;
+    justify-content: space-between;
     border: 0;
     background-color: transparent;
-
-    font-size: 3em;
-    width: 1em;
-    height: 1em;
-    line-height: 0.4;
-    text-indent: 5em;
-    white-space: nowrap;
-    overflow: hidden;
+    width: 100%;
+    padding: 0.25em 1em;
 }
 
-.nav-menu-toggle::after {
-    display: block;
-    content: "\2261";
-    text-indent: 0;
-    
+.nav-menu-categories:hover {
+    background-color: red;
+    color: white;
+    transition: 0.3s;
 }
 
-.nav-menu-dropdown {
-    display: none;
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin: 0;
+.nav-menu-categories > p {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
 }
 
-.nav-menu-dropdown.is-open {
-    display: block;
+.nav-menu-categories > p + p {
+    font-size: 3rem;
 }
 
 .nav-menu {
@@ -118,12 +93,6 @@ figure {
     color: white;
 }
 
-@media screen and (min-width: 50em) {
-    .nav-menu {
-        padding: 0 4em;
-    }
-}
-
 .nav-menu > li + li {
     border-top: 1px solid #ccc;
 }
@@ -133,18 +102,34 @@ figure {
     padding: 0.8em 1em;
     color: white;
     font-weight: normal;
+    text-decoration: none;
 }
 
+.nav-menu > li > a:hover {
+    text-decoration: underline;
+}
 
+.nav-menu > li > a {
+    display: block;
+    padding: 0.8em 1em;
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+}
 
-@media screen and (min-width: 35em) {
-    .nav-menu-toggle {
+@media screen and (min-width: 50em) {
+    .nav-menu {
+        padding: 0 4em;
+    }
+}
+
+@media screen and (min-width: 40em) {
+    .nav-menu-categories {
         display: none;
     }
 
     .nav-menu-dropdown {
         display: block;
-        position: static;
     }
 
     .nav-menu {
@@ -154,7 +139,7 @@ figure {
     }
 
     .nav-menu > li {
-        flex: 1
+        flex: 1;
     }
 
     .nav-menu > li + li {
@@ -165,8 +150,94 @@ figure {
         padding: 0.3em;
         text-align: center;
     }
-
-    .nav-menu-categories p {
-        display: none;
-    }
 }
+
+/* #endregion */
+
+/* #region Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-games,
+.main-games-choises, 
+.left-right-buttons {
+    display: flex;
+    justify-content: center;
+}
+    /* #region Main-info */
+
+
+
+    /* #endregion */
+
+    /* #region Main-how-it-works */
+
+.main-how-it-works-one {
+    margin: 1em;
+}
+
+.main-how-it-works-all {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+    /* #endregion */
+
+    /* #region Main-games */
+
+.main-games {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.main-games-choises > p {
+    cursor: pointer;
+    margin: 1em;
+    color: #888;
+}
+
+.main-games-choises > p:hover {
+    color: black;
+}
+
+.main-games-choise.choise {
+    color: black;
+    border-bottom: solid 2px red;
+}
+
+figure {
+    display: inline-block;
+    border: 2px solid white;
+    text-align: center;
+    max-width: 300px;
+    padding: 1em;
+}
+
+figure:hover {
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+.left-right-buttons > button {
+    margin: 1em;
+}
+
+    /* #endregion */
+
+/* #endregion */
+
+
+
+/* #region Footer */
+
+footer {
+    background-color: greenyellow;
+}
+
+/* #endregion */
