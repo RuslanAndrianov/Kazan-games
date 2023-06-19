@@ -1,3 +1,5 @@
+/* #region Root */
+
 :root {
     box-sizing: border-box;
     font-family: "Times New Roman", Times, serif;
@@ -35,6 +37,8 @@ a {
 .hide {
     display: none;
 }
+
+/* #endregion */
 
 /* #region Header */
 
@@ -169,6 +173,7 @@ main {
     display: flex;
     justify-content: center;
 }
+
     /* #region Main-info */
 
 
@@ -231,8 +236,6 @@ figure:hover {
     /* #endregion */
 
 /* #endregion */
-
-
 
 /* #region Footer */
 

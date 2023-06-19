@@ -4,8 +4,7 @@ const navMenuCategories = document.getElementsByClassName("nav-menu-categories")
 const navList = document.getElementsByClassName("nav-menu-dropdown")[0];
 
 navMenuCategories.addEventListener("click", (event) => {
-    navList.classList.remove("hide");
-    navList.classList.add("show");
+    navList.classList.toggle("hide");
 });
 
 // Табы
