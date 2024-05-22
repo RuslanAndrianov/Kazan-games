@@ -3,11 +3,7 @@ class GameCard extends React.Component {
         return React.createElement(
             'figure',
             null,
-            React.createElement('img', {
-                src: '../static/primer.jpg',
-                alt: '\u0418\u0433\u0440\u0430',
-                width: '240'
-            }),
+            React.createElement('img', { src: '../static/primer.jpg', alt: '\u0418\u0433\u0440\u0430', width: '240' }),
             React.createElement(
                 'figcaption',
                 null,

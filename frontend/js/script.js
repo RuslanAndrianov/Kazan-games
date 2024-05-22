@@ -47,4 +47,6 @@ mainGamesChoiseWrap.addEventListener("click", (event) => {
 
 hideTabContent(1);
 
-//
+// Main-how-it-works
+
+const howItWorksElems = document.getElementsByClassName("main-how-it-works-one");

@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: "Times New Roman", Times, serif;
     font-size: 1rem;
+    --red: #d9121f;
+    --yellow: #ffae00;
+    --green: #51d466;
+    --blue: #1349b2;
 }
 
 *,
@@ -37,6 +41,8 @@ a {
 .hide {
     display: none;
 }
+
+
 
 /* #endregion */
 
@@ -75,7 +81,7 @@ header {
 .nav-menu-categories:hover {
     background-color: red;
     color: white;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .nav-menu-categories > p {
@@ -182,15 +188,59 @@ main {
 
     /* #region Main-how-it-works */
 
-.main-how-it-works-one {
-    margin: 1em;
-}
-
 .main-how-it-works-all {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.main-how-it-works-one {
+    margin: 1em;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.main-how-it-works-one.red > p:first-child {
+    color: var(--red);
+}
+
+.main-how-it-works-one.yellow > p:first-child {
+    color: var(--yellow);
+}
+
+.main-how-it-works-one.green > p:first-child {
+    color: var(--green);
+}
+
+.main-how-it-works-one.blue > p:first-child {
+    color: var(--blue);
+}
+
+.main-how-it-works-one.red:hover {
+    background-color: var(--red);
+    border: 2px solid var(--red);
+    transition: 0.5s;
+}
+
+.main-how-it-works-one.yellow:hover {
+    background-color: var(--yellow);
+    border: 2px solid var(--yellow);
+    transition: 0.5s;
+}
+
+.main-how-it-works-one.green:hover {
+    background-color: var(--green);
+    border: 2px solid var(--green);
+    transition: 0.5s;
+}
+
+.main-how-it-works-one.blue:hover {
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+    transition: 0.5s;
+}
+
+
 
     /* #endregion */
 

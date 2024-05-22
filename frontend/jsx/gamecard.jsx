@@ -2,11 +2,7 @@ class GameCard extends React.Component {
     render() {
         return (
             <figure>
-                <img
-                    src='../static/primer.jpg'
-                    alt='Игра'
-                    width='240'
-                />
+                <img src='../static/primer.jpg' alt='Игра' width='240' />
                 <figcaption>
                     <p>
                         <svg
