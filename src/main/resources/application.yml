@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: kazan_games
+  datasource:
+    url: jdbc:postgresql://localhost:5432/kazan_games
+    username: postgres
+    password: postgres
+  liquibase:
+    enabled: false
+
+server:
+  port: 8080
