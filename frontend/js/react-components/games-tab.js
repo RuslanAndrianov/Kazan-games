@@ -1,3 +1,5 @@
+import { GameCard } from "./gamecard.js";
+
 class GamesTab extends React.Component {
     render() {
         return React.createElement(
@@ -9,3 +11,5 @@ class GamesTab extends React.Component {
         );
     }
 }
+
+export { GamesTab }

@@ -64,3 +64,5 @@ class NavMenu extends React.Component {
         );
     }
 }
+
+export { NavMenu }

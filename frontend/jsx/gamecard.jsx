@@ -1,10 +1,10 @@
 class GameCard extends React.Component {
     render() {
         return (
-            <figure>
+            <figure className="game">
                 <img src='../static/primer.jpg' alt='Игра' width='240' />
                 <figcaption>
-                    <p>
+                    <p className="game-name">
                         <svg
                             xmlns='http://www.w3.org/2000/svg'
                             width='16'
@@ -18,7 +18,7 @@ class GameCard extends React.Component {
                         </svg>
                         Game
                     </p>
-                    <p>
+                    <p className="game-price">
                         <svg
                             xmlns='http://www.w3.org/2000/svg'
                             width='16'
@@ -32,7 +32,7 @@ class GameCard extends React.Component {
                         </svg>
                         100.00 р.
                     </p>
-                    <p>
+                    <p className="game-people">
                         <svg
                             xmlns='http://www.w3.org/2000/svg'
                             width='16'

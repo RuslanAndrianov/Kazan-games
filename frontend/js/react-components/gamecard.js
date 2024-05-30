@@ -2,14 +2,18 @@ class GameCard extends React.Component {
     render() {
         return React.createElement(
             'figure',
-            null,
+            {
+                className: "game"
+            },
             React.createElement('img', { src: '../static/primer.jpg', alt: '\u0418\u0433\u0440\u0430', width: '240' }),
             React.createElement(
                 'figcaption',
                 null,
                 React.createElement(
                     'p',
-                    null,
+                    {
+                        className: "game-name"
+                    },
                     React.createElement(
                         'svg',
                         {
@@ -27,7 +31,9 @@ class GameCard extends React.Component {
                 ),
                 React.createElement(
                     'p',
-                    null,
+                    {
+                        className: "game-price"
+                    },
                     React.createElement(
                         'svg',
                         {
@@ -45,7 +51,9 @@ class GameCard extends React.Component {
                 ),
                 React.createElement(
                     'p',
-                    null,
+                    {
+                        className: "game-people"
+                    },
                     React.createElement(
                         'svg',
                         {
@@ -64,3 +72,5 @@ class GameCard extends React.Component {
         );
     }
 }
+
+export { GameCard }

@@ -6,7 +6,7 @@
   </component>
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -16,7 +16,7 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="09daffc9-d02d-441e-a397-bb6abd398490">
+    <connection id="a29adc4c-68bd-4cef-935a-d2bc2491a95d">
       <console name="Connection" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
@@ -24,13 +24,15 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="a29adc4c-68bd-4cef-935a-d2bc2491a95d" object-ref="schemas/public/tables/games" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="09daffc9-d02d-441e-a397-bb6abd398490" />
+    <connection id="a29adc4c-68bd-4cef-935a-d2bc2491a95d" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="09daffc9-d02d-441e-a397-bb6abd398490" dataset="public.games" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="a29adc4c-68bd-4cef-935a-d2bc2491a95d" dataset="public.games" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
@@ -49,7 +51,7 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="09daffc9-d02d-441e-a397-bb6abd398490" active="true" signed="true">
+      <connection id="a29adc4c-68bd-4cef-935a-d2bc2491a95d" active="true" signed="true">
         <database>
           <name value="Connection" />
           <description value="" />
