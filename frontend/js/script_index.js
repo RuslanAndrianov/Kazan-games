@@ -10,12 +10,14 @@ request.send();
 // Заполнение данных на сайте из БД
 
 request.onreadystatechange = (e) => {
-    if (request.readyState == 4) {
+    if (request.readyState === 4) {
         let games = JSON.parse(request.responseText);
         console.log(games);
         let gamesElems = document.getElementsByClassName("game");
         for (let i = 0; i < games.length; i++) {
             let gamesElem = gamesElems[i];
+            let gamePicture = gamesElem.childNodes[0];
+            gamePicture.attributes[0].nodeValue = "../static/games_photo/" + games[i].picture;
             let gameName = gamesElem.querySelector(".game-name");
             gameName.childNodes[2].textContent = games[i].name;
             let gamePrice = gamesElem.querySelector(".game-price")

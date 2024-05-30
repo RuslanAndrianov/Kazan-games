@@ -14,7 +14,6 @@ public class Controller {
 
     @GetMapping("/games")
     public List<Game> getGames() {
-        System.out.println("GET request");
         return service.getAll();
     }
 }

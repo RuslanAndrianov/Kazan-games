@@ -39,3 +39,7 @@ build/
 
 ### Frontend ###
 /node_modules
+/frontend/static/games_photo/
+
+### DB Cache ###
+/migrations/games.xls
