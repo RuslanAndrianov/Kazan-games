@@ -174,7 +174,7 @@ main {
 }
 
 .main-games,
-.main-games-choises, 
+.main-games-choices, 
 .left-right-buttons {
     display: flex;
     justify-content: center;
@@ -251,17 +251,17 @@ main {
     flex-wrap: wrap;
 }
 
-.main-games-choises > p {
+.main-games-choices > p {
     cursor: pointer;
     margin: 1em;
     color: #888;
 }
 
-.main-games-choises > p:hover {
+.main-games-choices > p:hover {
     color: black;
 }
 
-.main-games-choise.choise {
+.main-games-choice.choice {
     color: black;
     border-bottom: solid 2px red;
 }
