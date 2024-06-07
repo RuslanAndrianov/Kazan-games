@@ -42,9 +42,7 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="a29adc4c-68bd-4cef-935a-d2bc2491a95d" object-ref="schemas/public/tables/games" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="a29adc4c-68bd-4cef-935a-d2bc2491a95d" />
